@@ -1,3 +1,8 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -15,7 +20,6 @@
 }
 
 .nav a {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #ffffff;
   font-size: 25px;
@@ -52,11 +56,7 @@
 
 .hero__description,
 .hero__title {
-  font-family: "Montserrat", sans-serif;
   color: rgba(255, 255, 255, 1);
-  font-weight: 900;
-  font-size: 80px;
-  line-height: 98px;
   text-align: center;
   margin-bottom: 56px;
 }
@@ -85,6 +85,8 @@
   text-transform: uppercase;
   padding: 22px 45px;
   cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 .hero__buttons {
@@ -97,7 +99,6 @@
   background-color: transparent;
   border: 5px solid #ffffff;
   margin: 0 48px 0 0;
-  transition: all 0.3s ease;
 }
 
 .hero-button:last-child {
@@ -107,5 +108,64 @@
 .hero-button:hover {
   color: #000000;
   background: #ffffff;
-  border: 5px solid #ffffff;
+}
+
+/* End Hero-section------------------ */
+
+.service-section {
+  background: #ffffff;
+  padding: 163px 0 492px 0;
+}
+
+.service-title,
+.service-item {
+  text-align: center;
+}
+
+.service-title {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 73px;
+  text-transform: uppercase;
+  margin: 0 0 164px 0;
+}
+
+.service-container {
+  max-width: 1308px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item {
+  max-width: 347px;
+  border: 3px solid #000000;
+  padding: 60px 0 62px 0;
+}
+
+.service-item__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin: 0 0 27px 0;
+}
+
+.service-item__description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  margin: 0 0 77px 0;
+}
+
+.service-button {
+  background: transparent;
+  color: #000000;
+  border: 5px solid #000000;
+}
+
+.service-button:hover {
+  color: #ffffff;
+  background: #000000;
 }
