@@ -4,6 +4,13 @@ body {
   font-weight: 400;
 }
 
+.content-layout {
+  max-width: 1308px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -15,9 +22,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0 45px;
-  max-width: 1308px;
+  padding-top: 40px;
+  padding-bottom: 45px;
   margin: 0 auto;
+}
+
+.menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .nav a {
@@ -44,15 +58,15 @@ body {
 /* End Header-------------------------------------- */
 
 .hero-section {
-  height: 100vh;
-  background: url(./images/jeshoots-com-pUAM5hPaCRI-unsplash.jpg) no-repeat
-    center center;
+  background: url(./images/hero-background.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.54);
+  box-sizing: border-box;
 }
 
 .hero__description,
@@ -83,7 +97,9 @@ body {
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 22px 45px;
+  width: 100%;
+  max-width: 267px;
+  height: 74px;
   cursor: pointer;
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -131,7 +147,6 @@ body {
 }
 
 .service-container {
-  max-width: 1308px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -140,7 +155,13 @@ body {
 .service-item {
   max-width: 347px;
   border: 3px solid #000000;
-  padding: 60px 0 62px 0;
+  padding: 60px 25px 62px;
+  margin: 0 20px 0 0;
+  box-sizing: border-box;
+}
+
+.service-item:last-child {
+  margin: 0;
 }
 
 .service-item__title {
@@ -173,10 +194,14 @@ body {
 
 .footer {
   background: rgba(0, 0, 0, 0.85);
-  display: flex;
+  padding: 53px 0;
+}
+
+.footer-container {
   justify-content: space-between;
   align-items: center;
-  padding: 53px 63px 53px 69px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .copy {
@@ -187,12 +212,16 @@ body {
 
 .social-media {
   display: flex;
+  align-items: flex-end;
+}
+
+.social-media__item a,
+.social-media__item img {
+  display: block;
 }
 
 .social-media__item a {
-  display: block;
   width: 29px;
-  height: 29px;
 }
 
 .social-media__item {
@@ -202,4 +231,147 @@ body {
 
 .social-media__item:last-child {
   margin: 0;
+}
+
+/* End Footer------------------ */
+
+@media screen and (max-width: 768px) {
+  .nav.content-layout {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .nav a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .nav__list__item {
+    margin: 0 20px 0 0;
+  }
+
+  .hero__title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    padding-top: 172px;
+    margin-bottom: 53px;
+  }
+
+  .hero__description {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 93px;
+  }
+
+  .hero-button {
+    margin: 0 20px 0 0;
+  }
+
+  .service-section {
+    padding: 109px 0 190px 0;
+  }
+
+  .service-title {
+    font-size: 40px;
+    line-height: 63px;
+    margin: 0 0 88px 0;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    margin: 0 0 50px 0;
+  }
+
+  .service-item:last-child {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .nav__list {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hero__title {
+    font-size: 41px;
+    line-height: 50px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-button {
+    margin: 0;
+    margin-bottom: 51px;
+  }
+
+  .hero-section {
+    background-position-x: right;
+  }
+
+  .hero {
+    padding-bottom: 145px;
+  }
+
+  .hero__description {
+    max-width: 319px;
+  }
+
+  .service-title {
+    font-size: 35px;
+    line-height: 43px;
+  }
+
+  .content-layout {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .service-item {
+    padding: 53px 20px 54px;
+    margin: 0 0 72px 0;
+  }
+
+  .service-item__title {
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0 0 23px 0;
+  }
+
+  .service-item__description {
+    font-size: 16px;
+    margin: 0 0 60px 0;
+  }
+
+  .service-button {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .footer {
+    padding: 59px 0 34px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .social-media {
+    margin: 0 0 43px 0;
+    width: 100%;
+    max-width: 225px;
+    justify-content: space-between;
+  }
 }

@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="en">
 <head>
-    <meta charset=”UTF-8″ />
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>Section A</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <a href="" class="logo">Logo here</a>
+        <nav class="nav content-layout">
+            <h1><a href="" class="logo">Logo here</a></h1>
+             <button class="menu-button">
+                <img src="images/menu.svg" alt="menu" width="50" >
+             </button>
             <ul class="nav__list">
                 <li class="nav__list__item">
                     <a href="">Home</a>
@@ -27,7 +31,7 @@
     </header>
     <section class="hero-section">
         <div class="hero">
-            <h1 class="hero__title">Be Creative</h1>
+            <h2 class="hero__title">Be Creative</h2>
             <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
@@ -38,10 +42,10 @@
         </div>
     </section>
     <section class="service-section">
-        <h1 class="service-title">Our Services</h1>
-        <div class="service-container">
+        <h2 class="service-title">Our Services</h2>
+        <div class="service-container content-layout">
             <div class="service-item">
-                <h2 class="service-item__title">Title Here</h2>
+                <h3 class="service-item__title">Title Here</h3>
                 <p class="service-item__description">Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
                 sed do eiusmod tempor
@@ -51,7 +55,7 @@
                 <button class="button service-button">Learn More</button>
             </div>
             <div class="service-item">
-                <h2 class="service-item__title">Title Here</h2>
+                <h3 class="service-item__title">Title Here</h3>
                 <p class="service-item__description">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor
@@ -61,7 +65,7 @@
                 <button class="button service-button">Learn More</button>
             </div>
             <div class="service-item">
-                <h2 class="service-item__title">Title Here</h2>
+                <h3 class="service-item__title">Title Here</h3>
                 <p class="service-item__description">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor
@@ -73,24 +77,26 @@
         </div>
     </section>
     <footer class="footer">
-        <ul class="social-media">
-            <li class="social-media__item">
-                <a>
-                    <img src="./images/instagram.svg" alt="Instagram" width="29" >
-                </a>
-            </li>
-            <li class="social-media__item">
-                <a>
-                    <img src="./images/linkedIn.svg" alt="LinkedIn" width="29">
-                </a>
-            </li>
-            <li class="social-media__item">
-                <a>
-                    <img src="./images/twitter.svg" alt="Twitter" width="29">
-                </a>
-            </li>
-        </ul>
-        <p class="copy">© Copyright 2020</p>
+        <div class="footer-container content-layout">
+            <ul class="social-media">
+                <li class="social-media__item">
+                    <a>
+                        <img src="./images/instagram.svg" alt="Instagram" width="29" >
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a>
+                        <img src="./images/linked-in.svg" alt="LinkedIn" width="29">
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a>
+                        <img src="./images/twitter.svg" alt="Twitter" width="29">
+                    </a>
+                </li>
+            </ul>
+            <p class="copy">© Copyright 2020</p>
+        </div>
     </footer>
 </body>
 </html>
